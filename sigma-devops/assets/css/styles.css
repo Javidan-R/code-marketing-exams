@@ -1,0 +1,41 @@
+// Variables
+$primary-color: #ff0000;
+$secondary-color: #00ff00;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Base styles
+body {
+  font-family: Arial, sans-serif;
+  color: $primary-color;
+}
+
+// Components
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// Responsive styles
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
