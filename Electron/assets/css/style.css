@@ -1,10 +1,9 @@
-header {
-  width: 100%;
-}
-.container{
+/* Header */
+header, .container {
   width: 100%;
   margin: 0 auto;
 }
+
 header .header-top {
   width: 96%;
   margin: auto;
@@ -12,18 +11,16 @@ header .header-top {
   justify-content: space-between;
   align-items: center;
 }
-header .header-top .init-link {
+
+header .header-top .init-link,
+header .header-top .init-link--left,
+header .header-top .init-link--right {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 38px;
 }
-header .header-top .init-link--left, header .header-top .init-link--right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
 header .header-center {
   width: 100%;
   background-color: #003F62;
@@ -32,33 +29,37 @@ header .header-center {
   justify-content: space-between;
   align-items: center;
 }
+
 header .header-center--left {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
+
 header .header-center--left figure img {
   width: 140px;
   height: 39px;
 }
+
 header .header-center--left .search-btn {
   position: relative;
 }
+
 header .header-center--left .search-btn input {
   width: 400px;
   height: 56px;
-  padding: 0px 0px 0px 25px;
+  padding: 0 25px 0 25px;
   position: relative;
   background: #FFFFFF;
   border-radius: 20px;
 }
+
 header .header-center--left .search-btn button {
   background: #EDA415;
   border-radius: 20px;
   width: 130px;
   height: 60px;
-
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -68,6 +69,7 @@ header .header-center--left .search-btn button {
   right: 0;
   cursor: pointer;
 }
+
 header .header-center--right {
   margin-right: 25px;
   display: flex;
@@ -76,12 +78,14 @@ header .header-center--right {
   gap: 18px;
   color: #FFFFFF;
 }
+
 header .header-center--right div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
+
 header .header-center--right div i {
   font-size: 24px;
   display: flex;
@@ -89,6 +93,7 @@ header .header-center--right div i {
   align-items: center;
   cursor: pointer;
 }
+
 header .header-center--right div span {
   font-family: 'Poppins';
   font-style: normal;
@@ -98,10 +103,14 @@ header .header-center--right div span {
   color: #FFFFFF;
   cursor: pointer;
 }
-header .header-center--right div .fa-heart, header .header-center--right div .fa-cart-shopping {
+
+header .header-center--right div .fa-heart,
+header .header-center--right div .fa-cart-shopping {
   gap: 10px;
 }
-header .header-center--right div .fa-heart .zero, header .header-center--right div .fa-cart-shopping .zero {
+
+header .header-center--right div .fa-heart .zero,
+header .header-center--right div .fa-cart-shopping .zero {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -114,6 +123,7 @@ header .header-center--right div .fa-heart .zero, header .header-center--right d
   align-items: center;
   border-radius: 50%;
 }
+
 header .header-bottom {
   width: 100%;
   height: 80px;
@@ -122,12 +132,14 @@ header .header-bottom {
   align-items: center;
   background: #F4F4F4;
 }
+
 header .header-bottom--left {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
 }
+
 header .header-bottom--left .browse {
   width: 218px;
   height: 80px;
@@ -139,6 +151,7 @@ header .header-bottom--left .browse {
   color: #FFFFFF;
   cursor: pointer;
 }
+
 header .header-bottom--left .browse span {
   font-family: 'Poppins';
   font-style: normal;
@@ -146,19 +159,16 @@ header .header-bottom--left .browse span {
   font-size: 16px;
   line-height: 24px;
 }
-header .header-bottom--left nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
+
+header .header-bottom--left nav ul,
 header .header-bottom--left nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
   cursor: pointer;
 }
+
 header .header-bottom--left nav ul li a {
   font-family: 'Poppins';
   font-style: normal;
@@ -167,6 +177,7 @@ header .header-bottom--left nav ul li a {
   line-height: 24px;
   color: #3A3A3A;
 }
+
 header .header-bottom--right p {
   margin-right: 25px;
   font-family: 'Poppins';
@@ -174,242 +185,175 @@ header .header-bottom--right p {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-}
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide {
-  width: 100%;
-  display: none;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
-}
-
-.slide.active {
-  display: flex;
-  animation-name: fadeSlide;
-}
-
-@keyframes fadeSlide {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-content {
-  display: flex;
-  align-items: center;
-}
-
-.slide-content .text {
-  flex: 1;
-  padding: 20px;
-  font-size: 24px;
-}
-
-.slide-content img {
-  flex: 1;
-  height: auto;
-}
-
-.carousel-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.carousel-buttons button {
-  margin: 0 5px;
-}
-
-
-.btn-shop{
-  background: #EDA415;
-  border-radius: 20px;
-  width: 130px;
-  height: 60px;
-
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-.btn-view{
-  background: #FFFFFF;
-  border-radius: 20px;
-  width: 130px;
-  height: 60px;
-
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  color: #EDA415;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-
-.carousel-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh;
-  padding: 0 20px;
-}
-
-.carousel {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  height: 100%;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.nav-buttons {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.nav-buttons button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.photo {
-  width: 100%;
-  height: 100%;
-  background-image: url('./assets/img/Frame 29.png');
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-h1 {
-  text-align: center;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.footer{
+}/* Footer */
+.footer {
   background-color: #E2F4FF;
- 
 }
-.footer-grid{
 
-  height: 500px;
+.footer-grid {
   margin: auto;
-  padding: 50px;
+  width: 90%;
+  max-width: 1320px;
+  padding-top: 50px;
 }
-.footer-top{
-  background-color: #fff;
-  width: 100%;
-  margin: auto;
+
+.footer-top {
+  background-color: #FFFFFF;
+  border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  height: 63px;
+  width: 80%;
+  max-width: 388px;
+  border-radius: 20px;
+  background-color: #EDA415;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.email-container input[type="email"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.email-container input[type="email"]::placeholder {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.email-container .send-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.email-container .send-icon {
+  fill: #FFFFFF;
+  width: 18px;
+  height: 18px;
+}
+
+.footer-bottom {
+  background-color: #E2F4FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+
+
+.newsletter h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1B5A7D;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.footer-email{
-  
-}
-.newsletter h4{
-  
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 29.38px;
-line-height: 44px;
 
-/* identical to box height */
-color: #1B5A7D;
-
+.footer-contact img {
+  padding: 0 15px;
 }
 
-.footer-bottom{
-  width: 100%;
+
+
+.footer-social {
+  width: 70%;
   display: flex;
-  justify-content: space-around;
-  margin: auto;
+  justify-content: space-evenly;
 }
-.footer p{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19.38px;
-  
-  /* identical to box height */
-  
-  color: #1B5A7D;  
-  
-}
-.footer li{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 19.38px;
-line-height: 29px;
 
-/* identical to box height */
-
-color: #1B5A7D;
+.footer-social i {
+  color: #3B3B3B;
 }
-footer li a{
+
+.fa-brands {
+  height: 30px;
+  width: 30px;
+  top: 2px;
+}
+
+.footer-links p {
+  padding-bottom: 10px;
+  color: #1B5A7D;
+}
+.footer-links ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+.footer-links li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer-links li::before {
+  content: "•";
+  margin-right: 5px;
+  color: #36383A;
+}
+
+.footer-links a {
   text-decoration: none;
 }
 
+/* Media queries */
+@media (max-width: 768px) {
+  .footer-grid {
+    padding: 30px;
+  }
 
-.footer-links p{  
-  padding-bottom: 50px ;
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
 
+  .newsletter h4 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .email-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    padding: 15px;
+  }
+
+  .newsletter h4 {
+    font-size: 16px;
+  }
+
+  .footer-links ul {
+    padding-left: 10px;
+  }
 }

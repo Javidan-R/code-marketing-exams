@@ -7,9 +7,10 @@
   <title>Electron</title>
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
+  <div class="container">
   <header>
     <div class="header-top">
       <div class="phone-number">
@@ -72,101 +73,73 @@
       </div>
     </div>
   </header>
-  <main>
-    <section>
-      <div>
-        <h1>Electron</h1>
-        <div class="buttons">
-          <!-- <button class="btn-shop">Shop Now</button> -->
-          <!-- <button class="btn-view">View More</button> -->
-        </div>
-      </div>
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="slides">
-            <div class="slide active"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-          </div>
-          <div class="dots"></div>
-          <div class="nav-buttons">
-            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
-            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer class="footer">
+ <footer class="footer">
     <div class="footer-grid">
-        <div class="footer-top">
-          <div class="newsletter">
-            <h4>Subscribe to our newsletter</h4>
-          </div>
-          <div class="footer-email">
-            <form>
-              <input type="email" placeholder="Email address">
-              <input type="submit" value="Subscribe">
-            </form>
-          </div>
+      <div class="footer-top">
+        <div class="newsletter">
+          <h4>Subscribe to our newsletter</h4>
+        </div>
+        <div class="email-container">
+          <input type="email" placeholder="Enter your email address">
+          <i class="fa-sharp fa-solid fa-paper-plane"></i>
+        </div>
         
-          <div class="contact-info">
-            <h4>Contact us 24/7</h4>
+        <div class="footer-contact">
+          <div>
+            <img src="./assets/img/head.png" alt="" srcset="">
+          </div>
+          <div>
+            <p>Contact us 24/7</p>
             <p>(+62) 0123 567 789</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-links">
-        <img src="./assets/img/logo-1 1.png" alt="">
-        <p> 64 st james boulevard
-          hoswick , ze2 7zj
-        </p>
-        <hr>
-        <div>
-          <a href="#"><i></i></a>
-          <a href="#"><i></i></a>
-          <a href="#"><i></i></a>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <img src="./assets/img/logo-1 1.png" alt="">
+          <p>64 st james boulevard <br> hoswick, ze2 7zj</p>
+          <hr>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="">Find product</a>
+          <ul>
+            <li><a href="#">Brownze arnold</a></li>
+            <li><a href="#">Chronograph blue</a></li>
+            <li><a href="#">Smart phones</a></li>
+            <li><a href="#">Automatic watch</a></li>
+            <li><a href="#">Hair straighteners</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <a href="#">Get help</a>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Return policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Payment policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Our policy</a></li>
+            <li><a href="#">Custmer care</a></li>
+            <li><a href="#">Faq’s</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-links">
-        <p>Find product</p>
-        <ul>
-          <li><a href="#">Find product</a></li>
-          <li><a href="#">Get help</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <p> Get help</p>
-        <ul>
-          <li><a href="#">Find product</a></li>
-          <li><a href="#">Get help</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <p>About Us</p>
-        <ul>
-          <li><a href="#">Find product</a></li>
-          <li><a href="#">Get help</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-address">
-      
-    </div>
     </div>
   </footer>
-
+</div>
+  
 </body>
 
 </html>
