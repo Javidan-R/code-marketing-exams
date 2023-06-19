@@ -1,2 +1,2 @@
-# code-marketing-exams
+# code-marketing2-exams
 code-marketing-exams April to September
